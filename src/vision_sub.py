@@ -59,7 +59,7 @@ class VisionSubscriber(Node):
         self.bridge = CvBridge()
         
         # ⚠️ 请替换为 Ubuntu 下 best.onnx 的真实路径！
-        self.model = YOLO('/home/benlmy/rt_vision-1/final_project/best.onnx', task="detect") 
+        self.model = YOLO('/home/benlmy/rm_vision_lite_ros2/models/best.onnx', task="detect") 
 
     def listener_callback(self, data):
         # 还原为 OpenCV 图像

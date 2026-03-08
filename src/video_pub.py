@@ -13,7 +13,7 @@ class VideoPublisher(Node):
         self.timer = self.create_timer(0.033, self.timer_callback)
         
         # ⚠️ 请将这里的路径替换为你 Ubuntu 系统下的视频真实路径！
-        self.video_path = '/home/benlmy/rt_vision-1/final_project/test.mp4' 
+        self.video_path = '/home/benlmy/rm_vision_lite_ros2/data/test.mp4' 
         self.cap = cv2.VideoCapture(self.video_path)
         self.bridge = CvBridge()
 
